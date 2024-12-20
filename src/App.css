@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("./1.jpg") no-repeat center center/cover;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.carousel-content {
+  text-align: left;
+  max-width: 50%;
+}
+
+.carousel-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.carousel-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.control-button {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.control-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.carousel-image {
+  position: relative;
+  max-width: 40%;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.carousel-number {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
