@@ -8,7 +8,7 @@ const App = () => {
         <div className="carousel-content">
           <h1 className="carousel-title">It's Christmas Time Now</h1>
           <p className="carousel-subtitle">
-            <b>Chúc cô Hường và các bạn hoạ sĩ nhỏ có thêm một mùa Giáng sinh vui vẻ và ấm áp bên người thân, yêu thương của mình nhé!</b>
+            <b style={{ color: "white" }}>Chúc cô Hường và các bạn hoạ sĩ nhỏ có thêm một mùa Giáng sinh vui vẻ và ấm áp bên người thân, yêu thương của mình nhé!</b>
           </p>
         </div>
       </div>
