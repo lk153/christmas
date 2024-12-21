@@ -1,13 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 
 const App = () => {
+  const [isPlaying, setIsPlaying] = useState(false); // State to track audio playback
   const audioRef = useRef(null);
 
-  const handlePlay = () => {
+  const toggleAudio = () => {
     const audio = audioRef.current;
     if (audio) {
-      audio.play();
+      if (isPlaying) {
+        audio.pause(); // Pause the audio
+      } else {
+        audio.play(); // Play the audio
+      }
+      setIsPlaying(!isPlaying); // Toggle the playing state
     }
   };
 
@@ -17,7 +23,7 @@ const App = () => {
       <audio ref={audioRef} src={process.env.PUBLIC_URL + '/christmas.mp3'} loop />
 
       {/* Jingle Bell Button */}
-      <button onClick={handlePlay} className="jingle-bell-button">
+      <button onClick={toggleAudio} className="jingle-bell-button">
         <span className="bell-icon">🔔</span>
       </button>
       <div className="carousel">
